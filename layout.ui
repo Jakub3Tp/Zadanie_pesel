@@ -24,7 +24,7 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="4" column="1">
-     <widget class="QLineEdit" name="lineEdit_5"/>
+     <widget class="QLineEdit" name="post1"/>
     </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
@@ -34,7 +34,7 @@
      </widget>
     </item>
     <item row="4" column="3">
-     <widget class="QLineEdit" name="lineEdit_6"/>
+     <widget class="QLineEdit" name="post2"/>
     </item>
     <item row="4" column="0">
      <widget class="QLabel" name="label_5">
@@ -72,7 +72,7 @@
      </widget>
     </item>
     <item row="3" column="1" colspan="3">
-     <widget class="QLineEdit" name="lineEdit_4"/>
+     <widget class="QLineEdit" name="id"/>
     </item>
     <item row="5" column="0" colspan="4">
      <widget class="QPushButton" name="pushButton">
@@ -82,13 +82,13 @@
      </widget>
     </item>
     <item row="2" column="1" colspan="3">
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QLineEdit" name="birth"/>
     </item>
     <item row="0" column="1" colspan="3">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="name"/>
     </item>
     <item row="1" column="1" colspan="3">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="surname"/>
     </item>
    </layout>
   </widget>

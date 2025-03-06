@@ -10,4 +10,5 @@ class MyForm(QDialog):
         self.ui.setupUi(self)
         self.show()
 
-    def
+    def imie(self):
+        self.ui.
