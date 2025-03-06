@@ -75,7 +75,7 @@
      <widget class="QLineEdit" name="id"/>
     </item>
     <item row="5" column="0" colspan="4">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="save">
       <property name="text">
        <string>Ok</string>
       </property>
