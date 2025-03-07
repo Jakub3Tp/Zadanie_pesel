@@ -23,3 +23,15 @@ class Person:
             return True
         else:
             raise ValueError("Invalid pesel")
+    
+    def validate_date(self):
+        year = self.birth.datetime.date
+
+        if year >= 1900:
+            print('01')
+        elif year >= 2000:
+            print('21')
+        elif year >= 2100:
+            print('41')
+        elif year >= 2200:
+            print('61')
