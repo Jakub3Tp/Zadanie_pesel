@@ -15,8 +15,11 @@ class Person:
         if self.id.isdigit() and len(self.id) == 11:
             weight = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3]
             sum = sum(int(id[i]) * weight[i] for i in range(10))
-            rest = (10 - (sum % 10)) % 10
-            return rest == int(id[10])
-
+            rest = sum % 10
+            if rest == 0:
+                control = 0
+            else:
+                control = 10 - rest
+            return True
         else:
             raise ValueError("Invalid pesel")
