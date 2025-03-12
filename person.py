@@ -25,13 +25,29 @@ class Person:
             raise ValueError("Invalid pesel")
     
     def validate_date(self):
-        year = self.birth.datetime.date
+        pesel_year = int(self.id[:2])
+        pesel_month = int(self.id[2:4])
+        pesel_day = int(self.id[4:6])
 
-        if year >= 1900:
-            print('01')
-        elif year >= 2000:
-            print('21')
-        elif year >= 2100:
-            print('41')
-        elif year >= 2200:
-            print('61')
+        # Określenie stulecia
+        if 1 <= pesel_month <= 12:
+            century = 1900
+        elif 21 <= pesel_month <= 32:
+            century = 2000
+            pesel_month -= 20
+        elif 41 <= pesel_month <= 52:
+            century = 2100
+            pesel_month -= 40
+        elif 61 <= pesel_month <= 72:
+            century = 2200
+            pesel_month -= 60
+        elif 81 <= pesel_month <= 92:
+            century = 1800
+            pesel_month -= 80
+        else:
+            return False  # Niepoprawny PESEL
+
+        full_year = century + pesel_year
+        birth_date = datetime.strptime(self.birth, "%Y-%m-%d")
+
+        return birth_date.year == full_year and birth_date.month == pesel_month and birth_date.day == pesel_day
