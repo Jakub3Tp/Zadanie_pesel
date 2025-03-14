@@ -28,6 +28,10 @@ class MyForm(QDialog):
             message.setText(e.__str__())
             message.exec()
 
+        #class Persons:
+        #def __init__(self):
+        #self.persons = []
+
         #with open('./data.txt', 'w+') as file:
         #    file.write(f'{name}, {surname}, {birth}, {pesel}, {post1}, {post2} \n')
 if __name__ == '__main__':
